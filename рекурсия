@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+void rec(int i, int a) {
+       if (i < a) {
+        i += 2;
+        rec(i, a);
+        cout << i << "\t";
+    }
+}
+int main() {
+	rec(15, 45);
+	return 0;
+}
